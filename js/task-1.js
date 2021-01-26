@@ -6,14 +6,14 @@
     Категория: Животные
     Количество элементов: 4  */
 
-console.log(`В списке ${document.querySelectorAll('.item').length} категории.`);
+const itemsRef = document.querySelectorAll('.item');
 
-const categories = document
-  .querySelectorAll('.item')
-  .forEach((item) =>
-    console.log(
-      ` Категория: ${
-        item.querySelector('h2').textContent
-      } \n Количество элементов: ${item.querySelectorAll('li').length}`
-    )
-  );
+console.log(`В списке ${itemsRef.length} категории.`);
+
+const categories = itemsRef.forEach((item) =>
+  console.log(
+    ` Категория: ${
+      item.querySelector('h2').textContent
+    } \n Количество элементов: ${item.querySelectorAll('li').length}`
+  )
+);
