@@ -1,0 +1,50 @@
+.list {
+  list-style: none;
+}
+
+.link {
+  font-style: normal;
+}
+
+img {
+  display: block;
+}
+
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -15px;
+}
+
+.gallery-item {
+  margin: 15px;
+}
+
+.gallery-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+#counter,
+#name-input,
+#validation-input,
+#font-size-control,
+#text,
+#controls {
+  display: block;
+  margin: 40px;
+}
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
